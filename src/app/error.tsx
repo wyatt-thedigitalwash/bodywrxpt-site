@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Error({
   reset,
@@ -9,21 +9,23 @@ export default function Error({
   reset: () => void;
 }) {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center px-4 text-center">
-      <h1 className="text-4xl font-bold mb-4">Something went wrong</h1>
-      <p className="text-lg text-gray-600 mb-8">
+    <main className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
+      <h1 className="font-display text-[36px] tracking-[0.04em] text-text md:text-[48px]">
+        Something went wrong
+      </h1>
+      <p className="mt-4 text-[15px] leading-relaxed text-text/60">
         An unexpected error occurred. Please try again.
       </p>
-      <div className="flex gap-4">
+      <div className="mt-8 flex gap-4">
         <button
           onClick={reset}
-          className="inline-block rounded-md bg-black px-6 py-3 text-white hover:bg-gray-800 transition-colors"
+          className="border border-accent px-6 py-3 text-[11px] font-medium uppercase tracking-[0.1em] text-text transition-colors duration-500 hover:bg-accent hover:text-bg"
         >
           Try Again
         </button>
         <Link
           href="/"
-          className="inline-block rounded-md border border-black px-6 py-3 text-black hover:bg-gray-100 transition-colors"
+          className="border border-accent/30 px-6 py-3 text-[11px] font-medium uppercase tracking-[0.1em] text-text/60 transition-colors duration-500 hover:border-accent hover:text-text"
         >
           Go Home
         </Link>

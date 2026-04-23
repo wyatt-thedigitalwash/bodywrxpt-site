@@ -1,39 +1,88 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg: #1C1C1A;
+  --color-text: #F0E6D3;
+  --color-accent: #B89B82;
+  --color-accent-hover: #CBAF96;
+  --color-paper: #FAFAF7;
+  --font-display: var(--font-cormorant-garamond);
+  --font-body: var(--font-inter);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-bg: var(--color-bg);
+  --color-text: var(--color-text);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-paper: var(--color-paper);
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body), sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
 }
 
-/* Collapse doubled padding between consecutive same-background sections.
-   Uses data-bg attribute on each section element. Only collapses when
-   the adjacent sections share the same data-bg value. Sections with
-   different backgrounds keep full padding for breathing room. */
-section[data-bg="white"] + section[data-bg="white"],
-section[data-bg="cream"] + section[data-bg="cream"],
-section[data-bg="light"] + section[data-bg="light"],
-section[data-bg="dark"] + section[data-bg="dark"],
-section[data-bg="gray"] + section[data-bg="gray"],
-section[data-bg="primary"] + section[data-bg="primary"] {
+/* Utility: apply display serif font */
+.font-display {
+  font-family: var(--font-display), serif;
+}
+
+/* Section spacing: collapse top padding when consecutive sections share the same background */
+section[data-bg="charcoal"] + section[data-bg="charcoal"] {
   padding-top: 0;
+}
+
+section[data-bg="paper"] + section[data-bg="paper"] {
+  padding-top: 0;
+}
+
+/* Skip navigation link */
+.skip-nav {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 100;
+  padding: 8px 16px;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.skip-nav:focus {
+  top: 16px;
+}
+
+/* Editorial image treatment -- subtle desaturation, warm tone, light contrast */
+.editorial-image {
+  filter: saturate(0.88) contrast(1.06) brightness(0.97);
+}
+
+/* On paper-white backgrounds, lift brightness and add contrast so photos hold their own */
+section[data-bg="paper"] .editorial-image {
+  filter: saturate(0.88) contrast(1.1) brightness(1.0);
+}
+
+/* Global focus-visible styles for interactive elements */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
