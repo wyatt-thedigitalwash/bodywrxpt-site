@@ -24,7 +24,7 @@ export default function HeroSection() {
       {/* Mobile portrait -- top */}
       <div className="relative h-[60svh] w-full shrink-0 overflow-hidden md:hidden">
         <Image
-          src="/images/dr-mancuso-portrait.webp"
+          src="/images/dr-mancuso-portrait-copy.webp"
           alt="Dr. Alexandra Mancuso, physical therapist and founder of BodyWRX, in the Tampa practice."
           width={961}
           height={1387}
@@ -79,7 +79,7 @@ export default function HeroSection() {
             className="h-full w-full"
           >
             <Image
-              src="/images/dr-mancuso-portrait.webp"
+              src="/images/dr-mancuso-portrait-copy.webp"
               alt="Dr. Alexandra Mancuso, physical therapist and founder of BodyWRX, in the Tampa practice."
               width={961}
               height={1387}

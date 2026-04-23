@@ -111,9 +111,7 @@ export default function ContactPage() {
                   href="mailto:dralexandramancuso@gmail.com"
                   className="font-display block min-h-[44px] text-[20px] tracking-[0.02em] text-bg underline underline-offset-4 decoration-bg/20 transition-colors duration-500 hover:text-accent hover:decoration-accent md:text-[24px]"
                 >
-                  dralexandramancuso
-                  <br className="md:hidden" />
-                  @gmail.com
+                  dralexandramancuso@gmail.com
                 </a>
               </ContactDetail>
 
