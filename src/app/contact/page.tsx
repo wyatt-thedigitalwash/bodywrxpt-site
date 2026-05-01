@@ -161,14 +161,14 @@ export default function ContactPage() {
           <FadeIn delay={0.1}>
             <div className="aspect-[16/9] w-full overflow-hidden md:aspect-[21/9]">
               <iframe
-                src="https://maps.google.com/maps?q=4221+W+Boy+Scout+Blvd+Suite+170+Tampa+FL+33607&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.920345327377!2d-82.51718382415697!3d27.965725614047436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c3ad957da84d%3A0x984f83f3d70f5f2e!2s4221%20W%20Boy%20Scout%20Blvd%2C%20Tampa%2C%20FL%2033607!5e0!3m2!1sen!2sus!4v1777659561995!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: "grayscale(80%) contrast(1.1) brightness(0.9)" }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="BodyWRX Physical Therapy & Wellness location"
+                title="Map showing BodyWRX Physical Therapy location at 4221 W Boy Scout Blvd, Tampa, FL"
               />
             </div>
           </FadeIn>
