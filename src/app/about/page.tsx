@@ -62,8 +62,8 @@ export default function AboutPage() {
       />
       {/* 1. Header Section */}
       <section
-        data-bg="paper"
-        className="bg-paper px-6 pt-40 pb-24 md:px-10 md:pt-52 md:pb-40"
+        data-bg="ivory"
+        className="bg-ivory px-6 pt-40 pb-24 md:px-10 md:pt-52 md:pb-40"
         aria-label="About introduction"
       >
         <div className="mx-auto flex max-w-[1400px] flex-col gap-12 md:flex-row md:items-center md:justify-between md:gap-16">
@@ -112,8 +112,8 @@ export default function AboutPage() {
 
       {/* 2. The Practice Section */}
       <section
-        data-bg="paper"
-        className="bg-paper px-6 py-24 md:px-10 md:py-40"
+        data-bg="ivory"
+        className="bg-ivory px-6 py-24 md:px-10 md:py-40"
         aria-label="The Practice"
       >
         <div className="mx-auto max-w-[1400px]">
@@ -154,18 +154,23 @@ export default function AboutPage() {
                     Athletes who need precision. Professionals who cannot afford
                     to lose time. Post-surgical patients who want their recovery
                     handled with the same seriousness as the procedure itself.
-                    This is physical therapy for people who understand that
-                    quality is not a luxury. It is the baseline.
                   </p>
                 </div>
               </FadeIn>
+
+              <FadeIn delay={0.35} duration={1.2}>
+                <blockquote className="my-12 font-display text-[24px] italic leading-[1.3] tracking-[0.02em] text-bg md:my-16 md:text-[36px] lg:text-[44px]">
+                  Quality is not a luxury. It is the baseline.
+                </blockquote>
+              </FadeIn>
+
             </div>
           </div>
         </div>
       </section>
 
       {/* 3. Divider */}
-      <div className="bg-paper px-6 md:px-10">
+      <div className="bg-ivory px-6 md:px-10">
         <div className="mx-auto max-w-[1400px]">
           <FadeIn>
             <div className="flex flex-col items-center py-10 md:py-16">
@@ -175,7 +180,7 @@ export default function AboutPage() {
               <span className="mb-6 text-[13px] font-normal uppercase tracking-[0.14em] text-bg/60 md:text-[14px]">
                 The Practitioner
               </span>
-              <div className="h-px w-full bg-bg/10" />
+              <div className="h-px w-full bg-bg/12" />
             </div>
           </FadeIn>
         </div>
@@ -251,8 +256,8 @@ export default function AboutPage() {
 
       {/* 5. Philosophy Pull-Quote */}
       <section
-        data-bg="paper"
-        className="bg-paper px-6 py-24 md:px-10 md:py-40"
+        data-bg="ivory"
+        className="bg-ivory px-6 py-24 md:px-10 md:py-40"
         aria-label="Philosophy"
       >
         <div className="mx-auto max-w-[1400px]">

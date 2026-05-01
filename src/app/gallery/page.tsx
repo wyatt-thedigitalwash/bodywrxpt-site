@@ -44,8 +44,8 @@ export default function GalleryPage() {
       />
       {/* Header Section */}
       <section
-        data-bg="paper"
-        className="bg-paper px-6 pt-40 pb-24 md:px-10 md:pt-52 md:pb-40"
+        data-bg="ivory"
+        className="bg-ivory px-6 pt-40 pb-24 md:px-10 md:pt-52 md:pb-40"
         aria-label="Gallery introduction"
       >
         <div className="mx-auto max-w-[1400px]">
@@ -73,8 +73,8 @@ export default function GalleryPage() {
 
       {/* Gallery Grid */}
       <section
-        data-bg="paper"
-        className="bg-paper px-6 pb-24 md:px-10 md:pb-40"
+        data-bg="ivory"
+        className="bg-ivory px-6 pb-24 md:px-10 md:pb-40"
         aria-label="Gallery images"
       >
         <div className="mx-auto max-w-[1400px]">

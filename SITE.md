@@ -17,6 +17,20 @@
 
 BodyWRX is a premium concierge physical therapy practice in Tampa. Every patient receives one-on-one, personalized treatment tailored to their body and goals. Each session is fully focused on the patient, not split across multiple clients like traditional insurance-based PT. The cash-pay model means more time, better outcomes, and a truly individualized experience. The target audience is affluent professionals, athletes, and post-surgical patients who value quality, privacy, and results over insurance convenience.
 
+## Conditions Treated
+
+Client-confirmed as of 2026-05-01. These conditions are surfaced on the Services page and in structured data.
+
+- TMJ dysfunction
+- Low back pain
+- Neck pain
+- Shoulder pain
+- Knee pain
+- Hip pain
+- Elbow pain
+- Wrist pain
+- Plantar fasciitis
+
 ## Brand Voice
 
 Confident, refined, warm. Speaks to a discerning clientele without being stiff or clinical. Avoids medical jargon when possible. Leans into performance and recovery language. No em dashes anywhere in copy.
@@ -41,35 +55,37 @@ Visual reference points: Aesop, Byredo, RH (Restoration Hardware), Remedy Place,
 
 ### Backgrounds (only these two)
 
-| Role             | Name        | Hex       | CSS Variable    |
-| ---------------- | ----------- | --------- | --------------- |
-| Dark anchor      | Charcoal    | `#1C1C1A` | `--color-bg`    |
-| Body default     | Paper-white | `#FAFAF7` | `--color-paper` |
+| Role             | Name        | Hex       | CSS Variable      |
+| ---------------- | ----------- | --------- | ----------------- |
+| Dark anchor      | Charcoal    | `#1C1C1A` | `--color-bg`      |
+| Body default     | Ivory       | `#F8F4EC` | `--color-ivory`   |
 
-### Accents (never used as backgrounds)
+Ivory is a warm white that pairs softly with charcoal without feeling too beige. It replaces the previous cream background (`#F1E6D3`), which was too dark for section backgrounds.
 
-| Role             | Name        | Hex       | CSS Variable          |
-| ---------------- | ----------- | --------- | --------------------- |
-| Primary accent   | Bone        | `#F0E6D3` | `--color-text`        |
-| Secondary accent | Camel       | `#B89B82` | `--color-accent`      |
-| Accent hover     | Light Sand  | `#CBAF96` | `--color-accent-hover`|
+### Text and Accents
 
-**Bone is an accent color, not a background. Do not apply it as a section background under any circumstances.** Use bone for: text on charcoal, kicker labels on charcoal, hairline dividers on charcoal, button borders on charcoal, numeric markers, and small typographic highlights.
+| Role                            | Name        | Hex       | CSS Variable          |
+| ------------------------------- | ----------- | --------- | --------------------- |
+| Text on charcoal / warm accent  | Cream       | `#F1E6D3` | `--color-text`        |
+| Secondary accent                | Camel       | `#B89B82` | `--color-accent`      |
+| Accent hover                    | Light Sand  | `#CBAF96` | `--color-accent-hover`|
+
+**Cream (`#F1E6D3`) is a text and accent color only.** It is used for body text, headlines, kicker labels, hairline dividers, numeric markers, and button borders on charcoal sections. It is never used as a section background. Camel remains the secondary accent for hover states and small details.
 
 ### Background / Text Pairings
 
-| Background      | Text color     | Kicker color           | Contrast       |
-| --------------- | -------------- | ---------------------- | -------------- |
-| Charcoal        | Bone (`text`)  | Camel (`accent`)       | 13.8:1         |
-| Paper-white     | Charcoal (`bg`)| Charcoal/60 (`bg/60`)  | 16.3:1 / ~4.2:1 |
+| Background      | Text color      | Kicker color           | Contrast          |
+| --------------- | --------------- | ---------------------- | ----------------- |
+| Charcoal        | Cream (`text`)  | Camel (`accent`)       | ~13.5:1           |
+| Ivory           | Charcoal (`bg`) | Charcoal/60 (`bg/60`)  | ~17.5:1 / ~7.2:1  |
 
 ### Tailwind Theme Extension
 
 ```js
 colors: {
   bg: '#1C1C1A',
-  paper: '#FAFAF7',
-  text: '#F0E6D3',
+  ivory: '#F8F4EC',
+  text: '#F1E6D3',
   accent: '#B89B82',
   'accent-hover': '#CBAF96',
 }
@@ -81,8 +97,8 @@ colors: {
 - No glows or drop shadows
 - No pure white (`#FFFFFF`) or pure black (`#000000`)
 - On charcoal: dividers use `accent` at reduced opacity (e.g., `border-accent/20`)
-- On paper-white: dividers use `bg` at reduced opacity (e.g., `border-bg/10`)
-- Bone is never a section background
+- On ivory: dividers use `bg` at reduced opacity (e.g., `border-bg/12`)
+- Previous backgrounds paper-white (`#FAFAF7`) and cream-as-background (`#F1E6D3`) are retired
 
 ## Typography
 

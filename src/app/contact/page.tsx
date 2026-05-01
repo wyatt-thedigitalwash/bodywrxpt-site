@@ -44,8 +44,8 @@ export default function ContactPage() {
       />
       {/* 1. Header Section */}
       <section
-        data-bg="paper"
-        className="bg-paper px-6 pt-40 pb-24 md:px-10 md:pt-52 md:pb-40"
+        data-bg="ivory"
+        className="bg-ivory px-6 pt-40 pb-24 md:px-10 md:pt-52 md:pb-40"
         aria-label="Contact introduction"
       >
         <div className="mx-auto max-w-[1400px]">
@@ -74,8 +74,8 @@ export default function ContactPage() {
 
       {/* 2. Contact Details + Form */}
       <section
-        data-bg="paper"
-        className="bg-paper px-6 py-24 md:px-10 md:py-40"
+        data-bg="ivory"
+        className="bg-ivory px-6 py-24 md:px-10 md:py-40"
         aria-label="Contact details and form"
       >
         <div className="mx-auto grid max-w-[1400px] gap-16 md:grid-cols-[40%_1fr] md:gap-16 lg:gap-24">
@@ -147,8 +147,8 @@ export default function ContactPage() {
 
       {/* 3. Map Section */}
       <section
-        data-bg="paper"
-        className="bg-paper px-6 py-24 md:px-10 md:py-40"
+        data-bg="ivory"
+        className="bg-ivory px-6 py-24 md:px-10 md:py-40"
         aria-label="Location map"
       >
         <div className="mx-auto max-w-[1400px]">
@@ -161,7 +161,7 @@ export default function ContactPage() {
           <FadeIn delay={0.1}>
             <div className="aspect-[16/9] w-full overflow-hidden md:aspect-[21/9]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3526.0!2d-82.5175!3d27.9536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDU3JzEzLjAiTiA4MsKwMzEnMDMuMCJX!5e0!3m2!1sen!2sus!4v1"
+                src="https://maps.google.com/maps?q=4221+W+Boy+Scout+Blvd+Suite+170+Tampa+FL+33607&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: "grayscale(80%) contrast(1.1) brightness(0.9)" }}
@@ -238,7 +238,7 @@ function ContactDetail({
 }) {
   return (
     <div
-      className={`py-6 md:py-8 ${!last ? "border-b border-bg/10" : ""}`}
+      className={`py-6 md:py-8 ${!last ? "border-b border-bg/12" : ""}`}
     >
       <span className="mb-3 block text-[13px] font-normal uppercase tracking-[0.12em] text-bg/60">
         {label}

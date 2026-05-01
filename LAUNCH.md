@@ -52,7 +52,7 @@
 - [ ] Test all pages on mobile (iPhone Safari, Android Chrome)
 - [ ] Test all pages on desktop (Chrome, Safari, Firefox)
 - [ ] Run Lighthouse audit on mobile -- target 90+ on all scores
-- [ ] Verify color contrast passes WCAG AA (bone #F0E6D3 on charcoal #1C1C1A = ~11.5:1, passes)
+- [ ] Verify color contrast passes WCAG AA (cream text #F1E6D3 on charcoal #1C1C1A = ~13.5:1, charcoal on ivory #F8F4EC = ~17.5:1, passes)
 - [ ] Test keyboard navigation through entire site (Tab, Enter, Escape)
 - [ ] Test skip-to-content link
 - [ ] Test mobile menu open/close and focus trap

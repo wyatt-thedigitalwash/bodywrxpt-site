@@ -208,7 +208,7 @@ function Field({
   const id = label.toLowerCase().replace(/\s+/g, "-");
   const errorId = `${id}-error`;
   const inputClasses =
-    "w-full bg-transparent border-b border-bg/15 pb-4 pt-2 text-[16px] font-light leading-[1.5] tracking-[0.01em] text-bg placeholder:text-bg/30 transition-colors duration-300 focus:border-bg focus-visible:outline-none md:text-[17px]";
+    "w-full bg-transparent border-b border-bg/18 pb-4 pt-2 text-[16px] font-light leading-[1.5] tracking-[0.01em] text-bg placeholder:text-bg/30 transition-colors duration-300 focus:border-bg focus-visible:outline-none md:text-[17px]";
 
   return (
     <div>

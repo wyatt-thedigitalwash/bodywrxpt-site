@@ -5,8 +5,8 @@ import Button from "@/components/Button";
 export default function AboutSection() {
   return (
     <section
-      data-bg="paper"
-      className="bg-paper px-6 py-24 md:px-10 md:py-40"
+      data-bg="ivory"
+      className="bg-ivory px-6 py-24 md:px-10 md:py-40"
       aria-label="About Dr. Mancuso"
     >
       <div className="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-2 md:gap-16 lg:gap-24">

@@ -32,8 +32,8 @@ const CATEGORIES = [
 export default function ServicesSection() {
   return (
     <section
-      data-bg="paper"
-      className="bg-paper px-6 py-24 md:px-10 md:py-40"
+      data-bg="ivory"
+      className="bg-ivory px-6 py-24 md:px-10 md:py-40"
       aria-label="Services"
     >
       <div className="mx-auto max-w-[1400px]">
@@ -59,10 +59,10 @@ export default function ServicesSection() {
                 </span>
               </FadeIn>
 
-              <div className="border-t border-bg/10">
+              <div className="border-t border-bg/12">
                 {category.services.map((service) => (
                   <FadeIn key={service.num}>
-                    <div className="flex items-baseline border-b border-bg/10 py-5 md:py-6">
+                    <div className="flex items-baseline border-b border-bg/12 py-5 md:py-6">
                       <span className="mr-6 w-8 shrink-0 text-[12px] tracking-[0.08em] text-bg/30 md:mr-8">
                         {service.num}
                       </span>

@@ -31,10 +31,10 @@ const IMAGES = [
   },
   {
     id: 4,
-    src: "/images/treatment-graston.webp",
-    alt: "Dr. Mancuso using the Graston Technique on a client's shoulder during a treatment session.",
-    width: 1043,
-    height: 2400,
+    src: "/images/training-lat-pulldown.webp",
+    alt: "Client on a lat pulldown machine with cupping marks visible, combining treatment and training at BodyWRX.",
+    width: 1206,
+    height: 1871,
     span: "col-span-1 md:col-span-2 aspect-[2/3]",
   },
   {
@@ -79,10 +79,10 @@ const IMAGES = [
   },
   {
     id: 10,
-    src: "/images/training-lat-pulldown.webp",
-    alt: "Client on a lat pulldown machine with cupping marks visible, combining treatment and training at BodyWRX.",
-    width: 1206,
-    height: 1871,
+    src: "/images/treatment-graston.webp",
+    alt: "Dr. Mancuso using the Graston Technique on a client's shoulder during a treatment session.",
+    width: 1043,
+    height: 2400,
     span: "col-span-1 md:col-span-2 aspect-[4/3]",
   },
   {

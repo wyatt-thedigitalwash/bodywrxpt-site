@@ -20,7 +20,7 @@ const variants = {
   default:
     "border-accent text-text hover:bg-accent hover:text-bg focus-visible:outline-accent",
   light:
-    "border-bg/80 text-bg hover:bg-bg hover:text-paper focus-visible:outline-bg",
+    "border-bg/80 text-bg hover:bg-bg hover:text-ivory focus-visible:outline-bg",
 };
 
 const Button = forwardRef<HTMLAnchorElement | HTMLButtonElement, ButtonProps>(

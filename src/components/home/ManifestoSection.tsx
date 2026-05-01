@@ -4,8 +4,8 @@ import Button from "@/components/Button";
 export default function ManifestoSection() {
   return (
     <section
-      data-bg="paper"
-      className="bg-paper px-6 py-24 md:px-10 md:py-40"
+      data-bg="ivory"
+      className="bg-ivory px-6 py-24 md:px-10 md:py-40"
       aria-label="The Practice"
     >
       <div className="mx-auto max-w-[1400px]">

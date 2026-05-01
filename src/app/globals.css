@@ -2,10 +2,10 @@
 
 :root {
   --color-bg: #1C1C1A;
-  --color-text: #F0E6D3;
+  --color-text: #F1E6D3;
   --color-accent: #B89B82;
   --color-accent-hover: #CBAF96;
-  --color-paper: #FAFAF7;
+  --color-ivory: #F8F4EC;
   --font-display: var(--font-cormorant-garamond);
   --font-body: var(--font-inter);
 }
@@ -15,7 +15,7 @@
   --color-text: var(--color-text);
   --color-accent: var(--color-accent);
   --color-accent-hover: var(--color-accent-hover);
-  --color-paper: var(--color-paper);
+  --color-ivory: var(--color-ivory);
   --font-sans: var(--font-body);
   --font-serif: var(--font-display);
 }
@@ -38,7 +38,7 @@ section[data-bg="charcoal"] + section[data-bg="charcoal"] {
   padding-top: 0;
 }
 
-section[data-bg="paper"] + section[data-bg="paper"] {
+section[data-bg="ivory"] + section[data-bg="ivory"] {
   padding-top: 0;
 }
 
@@ -64,8 +64,8 @@ section[data-bg="paper"] + section[data-bg="paper"] {
   filter: saturate(0.88) contrast(1.06) brightness(0.97);
 }
 
-/* On paper-white backgrounds, lift brightness and add contrast so photos hold their own */
-section[data-bg="paper"] .editorial-image {
+/* On ivory backgrounds, boost contrast so photos hold their own against the lighter tone */
+section[data-bg="ivory"] .editorial-image {
   filter: saturate(0.88) contrast(1.1) brightness(1.0);
 }
 

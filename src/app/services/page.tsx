@@ -6,12 +6,12 @@ import Button from "@/components/Button";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "One-on-one physical therapy in Tampa: rehabilitation, Graston Technique, cupping, corrective training, and more. Cash-pay concierge care by appointment.",
+    "Concierge physical therapy in Tampa for TMJ, low back pain, plantar fasciitis, shoulder injuries, and more. One-on-one care from Dr. Alexandra Mancuso, DPT.",
   alternates: { canonical: "/services" },
   openGraph: {
     title: "Services | BodyWRX Physical Therapy & Wellness",
     description:
-      "One-on-one physical therapy in Tampa: rehabilitation, Graston Technique, cupping, corrective training, and more. Cash-pay concierge care by appointment.",
+      "Concierge physical therapy in Tampa for TMJ, low back pain, plantar fasciitis, shoulder injuries, and more. One-on-one care from Dr. Alexandra Mancuso, DPT.",
     url: "/services",
     type: "website",
     siteName: "BodyWRX Physical Therapy & Wellness",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Services | BodyWRX Physical Therapy & Wellness",
     description:
-      "One-on-one physical therapy in Tampa: rehabilitation, Graston Technique, cupping, corrective training, and more. Cash-pay concierge care by appointment.",
+      "Concierge physical therapy in Tampa for TMJ, low back pain, plantar fasciitis, shoulder injuries, and more. One-on-one care from Dr. Alexandra Mancuso, DPT.",
     images: ["/og-image.png"],
   },
 };
@@ -156,8 +156,8 @@ export default function ServicesPage() {
       />
       {/* Header Section */}
       <section
-        data-bg="paper"
-        className="bg-paper px-6 pt-40 pb-24 md:px-10 md:pt-52 md:pb-40"
+        data-bg="ivory"
+        className="bg-ivory px-6 pt-40 pb-24 md:px-10 md:pt-52 md:pb-40"
         aria-label="Services introduction"
       >
         <div className="mx-auto flex max-w-[1400px] flex-col gap-12 md:flex-row md:items-center md:justify-between md:gap-16">
@@ -209,8 +209,8 @@ export default function ServicesPage() {
 
       {/* Category 1: Rehabilitation */}
       <section
-        data-bg="paper"
-        className="bg-paper px-6 py-24 md:px-10 md:py-40"
+        data-bg="ivory"
+        className="bg-ivory px-6 py-24 md:px-10 md:py-40"
         aria-label="Rehabilitation services"
       >
         <div className="mx-auto max-w-[1400px]">
@@ -219,7 +219,7 @@ export default function ServicesPage() {
               01 &mdash; Rehabilitation
             </span>
 
-            <div className="border-t border-bg/10">
+            <div className="border-t border-bg/12">
               {CATEGORIES[0].services.map((service) => (
                 <ServiceRow key={service.num} service={service} />
               ))}
@@ -230,8 +230,8 @@ export default function ServicesPage() {
 
       {/* Category 2: Performance & Corrective */}
       <section
-        data-bg="paper"
-        className="bg-paper px-6 py-24 md:px-10 md:py-40"
+        data-bg="ivory"
+        className="bg-ivory px-6 py-24 md:px-10 md:py-40"
         aria-label="Performance and corrective services"
       >
         <div className="mx-auto max-w-[1400px]">
@@ -240,7 +240,7 @@ export default function ServicesPage() {
               02 &mdash; Performance & Corrective
             </span>
 
-            <div className="border-t border-bg/10">
+            <div className="border-t border-bg/12">
               {CATEGORIES[1].services.map((service) => (
                 <ServiceRow key={service.num} service={service} />
               ))}
@@ -284,8 +284,8 @@ export default function ServicesPage() {
 
       {/* Category 3: Recovery Modalities */}
       <section
-        data-bg="paper"
-        className="bg-paper px-6 py-24 md:px-10 md:py-40"
+        data-bg="ivory"
+        className="bg-ivory px-6 py-24 md:px-10 md:py-40"
         aria-label="Recovery modality services"
       >
         <div className="mx-auto max-w-[1400px]">
@@ -294,9 +294,63 @@ export default function ServicesPage() {
               03 &mdash; Recovery Modalities
             </span>
 
-            <div className="border-t border-bg/10">
+            <div className="border-t border-bg/12">
               {CATEGORIES[2].services.map((service) => (
                 <ServiceRow key={service.num} service={service} />
+              ))}
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* Conditions We Treat */}
+      <section
+        data-bg="ivory"
+        className="bg-ivory px-6 py-24 md:px-10 md:py-40"
+        aria-label="Conditions we treat"
+      >
+        <div className="mx-auto max-w-[1400px]">
+          <FadeIn>
+            <span className="mb-10 block text-[13px] font-normal uppercase tracking-[0.14em] text-bg/60 md:mb-14 md:text-[14px]">
+              Conditions We Treat
+            </span>
+          </FadeIn>
+
+          <FadeIn delay={0.1}>
+            <h2 className="font-display mb-8 max-w-[700px] text-[32px] leading-[1.1] tracking-[0.04em] text-bg md:mb-10 md:text-[56px] lg:text-[64px]">
+              From the everyday to the chronic.
+            </h2>
+          </FadeIn>
+
+          <FadeIn delay={0.2}>
+            <p className="mb-14 max-w-[520px] text-[16px] font-light leading-[1.7] tracking-[0.01em] text-bg/80 md:mb-20 md:text-[17px]">
+              Dr. Mancuso treats a wide range of orthopedic and musculoskeletal
+              conditions. Every plan starts with a thorough evaluation and ends
+              with you moving better.
+            </p>
+          </FadeIn>
+
+          <FadeIn delay={0.3}>
+            <div className="border-t border-bg/12">
+              {[
+                "TMJ Dysfunction",
+                "Low Back Pain",
+                "Neck Pain",
+                "Shoulder Pain",
+                "Knee Pain",
+                "Hip Pain",
+                "Elbow Pain",
+                "Wrist Pain",
+                "Plantar Fasciitis",
+              ].map((condition) => (
+                <div
+                  key={condition}
+                  className="border-b border-bg/12 py-5 md:py-6"
+                >
+                  <span className="font-display text-[22px] tracking-[0.03em] text-bg md:text-[32px] lg:text-[36px]">
+                    {condition}
+                  </span>
+                </div>
               ))}
             </div>
           </FadeIn>
@@ -347,7 +401,7 @@ function ServiceRow({
   service: { num: string; name: string; description: string };
 }) {
   return (
-    <div className="group border-b border-bg/10 py-8 md:flex md:gap-10 md:py-10 lg:gap-16">
+    <div className="group border-b border-bg/12 py-8 md:flex md:gap-10 md:py-10 lg:gap-16">
       <span className="mb-3 block text-[14px] tracking-[0.08em] text-bg/30 md:mb-0 md:w-12 md:shrink-0 md:pt-2 md:text-[16px]">
         {service.num}
       </span>

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     default: "BodyWRX Physical Therapy & Wellness | Concierge PT in Tampa",
   },
   description:
-    "Premium concierge physical therapy in Tampa, FL. One-on-one sessions with Dr. Mancuso, personalized recovery, and performance-driven results. By appointment.",
+    "Concierge physical therapy in Tampa, FL. One-on-one treatment for TMJ, back pain, plantar fasciitis, and sports injuries with Dr. Mancuso. By appointment.",
   metadataBase: new URL("https://bodywrxpt.com"),
   alternates: {
     canonical: "/",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "BodyWRX Physical Therapy & Wellness",
     title: "BodyWRX Physical Therapy & Wellness | Concierge PT in Tampa",
     description:
-      "Premium concierge physical therapy in Tampa, FL. One-on-one sessions with Dr. Mancuso, personalized recovery, and performance-driven results.",
+      "Concierge physical therapy in Tampa, FL. One-on-one treatment for TMJ, back pain, plantar fasciitis, and sports injuries with Dr. Mancuso. By appointment.",
     images: [
       {
         url: "/og-image.png",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BodyWRX Physical Therapy & Wellness | Concierge PT in Tampa",
     description:
-      "Premium concierge physical therapy in Tampa, FL. One-on-one sessions with Dr. Mancuso, personalized recovery, and performance-driven results.",
+      "Concierge physical therapy in Tampa, FL. One-on-one treatment for TMJ, back pain, plantar fasciitis, and sports injuries with Dr. Mancuso. By appointment.",
     images: ["/og-image.png"],
   },
   icons: {
@@ -114,6 +114,24 @@ const businessJsonLd = {
     sameAs: "https://en.wikipedia.org/wiki/Tampa,_Florida",
   },
   sameAs: ["https://instagram.com/bodywrxpt"],
+  medicalSpecialty: [
+    "Orthopedic",
+    "Sports Medicine",
+    "Physical Therapy",
+  ],
+  knowsAbout: [
+    "TMJ dysfunction",
+    "Low back pain",
+    "Knee pain",
+    "Shoulder pain",
+    "Plantar fasciitis",
+    "Neck pain",
+    "Hip pain",
+    "Elbow pain",
+    "Wrist pain",
+    "Post-surgical rehabilitation",
+    "Sports injury recovery",
+  ],
 };
 
 export default function RootLayout({
