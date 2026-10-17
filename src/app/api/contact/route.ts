@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-// Sender must be a verified domain in Resend before deployment
-const FROM = process.env.CONTACT_FROM_EMAIL ?? "BodyWRX Contact <contact@bodywrxpt.com>";
+// Sender uses The Digital Wash verified Resend domain (not the client's domain)
+const FROM = process.env.CONTACT_FROM_EMAIL ?? "BodyWRX Contact <noreply@thedigitalwash.com>";
 const TO = process.env.CONTACT_TO_EMAIL ?? "dralexandramancuso@gmail.com";
 
 const MAX_NAME = 100;
@@ -122,6 +122,7 @@ export async function POST(req: NextRequest) {
       resend.emails.send({
         from: FROM,
         to: TO,
+        replyTo: trimmedEmail,
         subject: `New Inquiry from ${trimmedName}`,
         text: [
           "New contact form submission from bodywrxpt.com",

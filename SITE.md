@@ -291,7 +291,7 @@ Dr. Alexandra Mancuso completed her Bachelor's degree in Psychology at the Unive
 - [ ] Testimonials: HIDDEN from live site, will re-enable when real testimonials arrive
 - [x] Logo files: confirmed (wordmark in public/)
 - [x] Owner portrait: confirmed (in public/images/)
-- [x] Sender email: confirmed as contact@bodywrxpt.com, Resend domain verification pending
+- [x] Sender email: BodyWRX Contact <noreply@thedigitalwash.com> (The Digital Wash verified Resend domain; cannot send from client domain)
 - [ ] Google Business Profile: DOES NOT EXIST, needs to be created before launch
 - [ ] Domain connected
 - [ ] GA4 ID provided
@@ -301,7 +301,7 @@ Dr. Alexandra Mancuso completed her Bachelor's degree in Psychology at the Unive
 
 - Domain status (bodywrxpt.com ownership to be confirmed with client)
 - Google Business Profile creation
-- Resend domain verification
+- (Resolved) Resend sending now uses thedigitalwash.com, no client domain verification needed
 
 ## Nice-to-Have (Post-Launch)
 
